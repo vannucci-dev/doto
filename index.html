@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5c03581a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Doto</title>
+</head>
+<body id="body">
+    <div class="content">
+
+    <header class="site-header" id="site-header">
+        <div class="site-header__holder">
+            <a href="#landing" class="site-header__homeLink">
+                <svg version="1.1" class="site-header__logo site-header__logo--black" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 538.9 231.7" style="enable-background:new 0 0 538.9 231.7;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{font-family:'BDColonius';}
+                        .st1{font-size:221px;}
+                    </style>
+                    <title>todo</title>
+                    <text transform="matrix(1 0 0 1 4.94 190.61)" class="st0 st1">Doto</text>
+                </svg>
+            </a>
+            <nav class="site-header__navBar">
+                <a onclick="modal(), changeMenu(1)" class="site-header__menuLink">
+                    <span id ="menu__link" class="site-header__lines site-header__black"></span>
+                </a>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="language-nav">
+        <a href="/" class="language-nav__link">
+            <h4 class="language-nav__element">IT</h4>
+        </a>
+        <a href="/" class="language-nav__link">
+            <h4 class="language-nav__element">ENG</h4>
+        </a>
+    </div>
+
+    <div class="back-top">
+        <a href="#landing" class="back-top__link">
+            <svg class="back-top__arrow" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.06 42.43"><defs><style>.cls-1{fill:none;stroke:transparent;stroke-miterlimit:10;}</style></defs><title>arrow</title><path class="cls-1" d="M43.44,35.51" transform="translate(-45.18 -28.73)"/><path d="M50.11,71.16q-.2-10.3-.31-20.62c0-3.43-.15-6.87-.11-10.31s.16-6.87.39-10.3h.27c.22,3.43.31,6.87.36,10.31s-.08,6.87-.13,10.3q-.15,10.31-.37,20.62Z" transform="translate(-45.18 -28.73)"/><path d="M55,36.77a.49.49,0,0,1-.69-.16l-4.1-6.45L46.1,36.6a.5.5,0,0,1-.69.16.51.51,0,0,1-.16-.7L49.8,29a.46.46,0,0,1,.42-.23.48.48,0,0,1,.42.23l4.52,7.12a.5.5,0,0,1-.15.69Z" transform="translate(-45.18 -28.73)"/></svg>
+            <i class="fas fa-undo back-top__back"></i>
+        </a>
+    </div>
+    
+
+    <section id="landing" class="landing">
+        <div class="landing-hero">
+            <h1 class="landing-hero__title">All your design needs, in a one stop shop.</h1>
+            <h3 class="landing-hero__description">
+                <a href="/" class="landing-hero__skill">Web Design, </a>
+                <a href="/" class="landing-hero__skill">Motion Graphic, </a>
+                <a href="/" class="landing-hero__skill">Content Creation, </a>
+                <a href="/" class="landing-hero__skill">Graphic Design.</a>
+            </h3>
+        </div>
+    </section>
+
+    <section id="products" class="products" onmouseover="">
+        <div class="products-grid" id="products-grid">
+
+            <div class="products-grid__element products-grid__1">
+                <figure class="products-grid__figure">
+                    <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="Product 1" class="products-grid__imageLarge">
+                </figure>
+                <figcaption class="products-grid__caption">Printoworks</figcaption>
+                <h3 class="products-grid__title">By playing with the shapes and adding color, an artist/designer can create a truly expressive pattern design</h3>
+            </div>
+
+            <div class="products-grid__element products-grid__2">
+                <figure class="products-grid__figure">
+                    <img src="https://images.unsplash.com/photo-1553531768-4ce3fb0b07fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="Product 2" class="products-grid__image">
+                </figure>
+                <figcaption class="products-grid__caption">Boxed Water</figcaption>
+
+                <h3 class="products-grid__title">Marketing campaing for the new AGELA product</h3>
+            </div>
+
+            <div class="products-grid__element products-grid__3">
+                <figure class="products-grid__figure">
+                    <img src="https://images.unsplash.com/photo-1557424120-32c81c3d50e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="Product 3" class="products-grid__image">
+                </figure>
+                <figcaption class="products-grid__caption">Minimal Design</figcaption>
+
+                <h3 class="products-grid__title">A minimal design helps to work more efficently</h3>
+            </div>
+
+        </div>
+
+        <div class="button">
+
+            <a href="/" class="button-black-to-white central-btn" id="product-btn">
+                View all projects
+            </a>
+
+        </div>
+
+        
+    </section>
+
+    <section class="about-us" id="about-us">
+
+    <div class="pictures-reel" id="picturesReel">
+        <div class="pictures-reel__container">
+            <img src="https://images.unsplash.com/photo-1494366222322-387658a1a976?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2462&q=80" alt="" class="pictures-reel__img">
+        </div>
+        <div class="pictures-reel__container">
+            <img src="https://images.unsplash.com/photo-1541702193626-24fe3a9fbed3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80" alt="" class="pictures-reel__img">
+        </div>
+        <div class="pictures-reel__container">
+            <img src="https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3578&q=80" alt="" class="pictures-reel__img">
+        </div>
+        <div class="pictures-reel__container">
+            <img src="https://images.unsplash.com/photo-1562639916-627ffe5f9539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80" alt="" class="pictures-reel__img">
+        </div>
+        <div class="pictures-reel__container">
+            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" alt="" class="pictures-reel__img">
+        </div>
+    </div>
+        
+    <div class="about">
+        <h1 class="landing-hero__title">For every kind of business, the answer you are looking for.</h1>
+        <h4 class=" products-grid__caption btn__callToAction">about us</h4>
+    </div>
+
+    </section>
+
+    <section class="our-clients" id="ourClients">
+
+        <div class="central-title">
+            <h2 class="central-title__title">Our clients</h2>
+            <h4 class="central-title__subtitle">Every client matters</h4>
+        </div>
+
+        <div class="clients">
+            <img src="img/Asset 3.svg" alt="" class="clients__logo" id="logo-1">
+            <img src="img/Asset 6.svg" alt="" class="clients__logo" id="logo-2">
+            <img src="img/Asset 7.svg" alt="" class="clients__logo" id="logo-3">
+            <img src="img/Asset 8.svg" alt="" class="clients__logo" id="logo-4">
+            <img src="img/Asset 9.svg" alt="" class="clients__logo" id="logo-5">                  
+        </div>
+
+        <div class="button">
+
+            <a href="/" class="button-black-to-white central-btn" id="clients-btn">
+                All clients
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="testimonials" id='testimonials' >
+        <h2 class="central-title__title central-title__title--white">What they say about our services:</h2>
+
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="testimonial-element">
+                    <img src="https://images.unsplash.com/photo-1553267751-1c148a7280a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="/" class="testimonial-element__img">
+                    <h4 class="testimonial-element__title">Albert Wallace - CEO of Fantasia ltd.</h4>
+                    <p class="testimonial-element__text">"Doto is the most valuable business resource we have EVER purchased. Keep up the excellent work. I have gotten at least 50 times the value from Doto."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-element">
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" alt="/" class="testimonial-element__img">
+                    <h4 class="testimonial-element__title">Laura Harvey - Head of compliance for GULP</h4>
+                    <p class="testimonial-element__text">"The professionality that I've found at DOTO during the realisation of our new Ethic and Compliance rebranding was astonishing. Thanks again guys and see you for the next project"</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-element">
+                    <img src="https://images.unsplash.com/photo-1573164713712-03790a178651?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" alt="/" class="testimonial-element__img">
+                    <h4 class="testimonial-element__title">Amber Gray - UI/UX Specialist at CopyCat</h4>
+                    <p class="testimonial-element__text">"Always a pleasure working with you. Exceptionally friendly staff and A+ level results"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+
+    </section>
+
+    <footer class="contact-us"id="footer">
+
+        <div class="contact-us__title">
+            <h1 class="landing-hero__title">Let's work together...</h1>
+            <h4 class=" products-grid__caption btn__callToAction">Start a new journey</h4>
+        </div>
+        
+        <div class="contact-form">
+            <div class="contact-form__element" id="contact-1">
+                <h4 class="contact-form__title">Email</h4>
+                <p class="contact-form__text">info@doto.example</p>
+            </div>
+            <div class="contact-form__element" id="contact-2">
+                <h4 class="contact-form__title">Telephone</h4>
+                <p class="contact-form__text">+00-55567893</p>
+            </div>
+            <div class="contact-form__element" id="contact-3">
+                <h4 class="contact-form__title">Meet us for a coffee</h4>
+                <p class="contact-form__text">34 None Street<br>Manchester<br>E110AM</p>
+            </div>
+        </div>
+
+        <a href="/" class="footer-text">Copyright 2020 - Doto All right reserved.</a>
+
+    </footer>
+
+    <div class="menu" onclick="modal()">
+        <svg version="1.1" class="menu__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 538.9 231.7" style="enable-background:new 0 0 538.9 231.7;" xml:space="preserve">
+        <style type="text/css">
+            .st0{font-family:'BDColonius';}
+            .st1{font-size:221px;}
+        </style>
+        <title>todo</title>
+        <text transform="matrix(1 0 0 1 4.94 190.61)" class="st0 st1">Doto</text>
+        </svg>
+        <div class="menu__container">
+            <a href="/" class="menu__link">
+                <h4 class="menu__title">Projects</h4>
+            </a>
+            <a href="/" class="menu__link">
+                <h4 class="menu__title">Our Clients</h4>
+            </a>
+            <a href="/" class="menu__link">
+                <h4 class="menu__title">Contact Us</h4>
+            </a>
+
+            <hr class="menu__line">
+            <hr class="menu__line">
+        </div>
+        
+        
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

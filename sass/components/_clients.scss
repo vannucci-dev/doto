@@ -1,0 +1,58 @@
+.clients {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+    transition: all .5s;
+
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        padding-top: 30rem;
+    }
+    
+
+    &__logo {
+        height: 24rem;
+        transform: translateY(12rem);
+        opacity: 0;
+        transition: all .5s;
+    
+    }
+
+}
+
+.client-animation{
+    animation-name: moveUp;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+
+#logo-1 {
+    animation-delay: .5s;
+}
+#logo-2 {
+    animation-delay: .8s;
+}
+#logo-3 {
+    animation-delay: 1.1s;
+}
+#logo-4 {
+    animation-delay: 1.4s;
+}
+#logo-5 {
+    animation-delay: 1.7s;
+}
+
+@keyframes moveUp {
+    from{transform: translateY(12rem); opacity: 0;}
+    to{transform: translateY(0); opacity: 1;}
+}
+
+
+
+

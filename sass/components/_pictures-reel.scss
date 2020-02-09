@@ -1,0 +1,42 @@
+.pictures-reel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 105%;
+    margin: 4.8rem auto;
+    transform: translateX(130rem);
+    transition: all 1.5s;
+
+    @include respond(phone) {
+        position: relative;
+        top: 30rem;
+    }
+
+    opacity: 0;
+
+    &__container {
+        max-height: 32rem;
+        max-width: 32rem;
+        height: 32rem;
+        width: 32rem;
+        overflow: hidden;
+        border-radius: 3px;
+
+        
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+.reel-active {
+    transform: translateX(-3.2rem);
+    opacity: 1;
+
+    @include respond(phone) {
+        transform: translateX(28%);
+    }
+}

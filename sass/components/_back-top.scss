@@ -1,0 +1,26 @@
+.back-top {
+    margin-left: 1.6rem;
+    position: fixed;
+    z-index: 100;
+    top:20%;
+    left: 2%;
+    
+
+
+    &__link:link,
+    %__link:active,
+    &__link:visited {
+        text-decoration: none;
+    }
+    &__arrow {
+        display: block;
+        stroke:black;
+        transition: all .2s;
+
+    }
+    &__back {
+        margin-top: .8rem;
+        color: white;
+        transition: all .2s;
+    }
+}

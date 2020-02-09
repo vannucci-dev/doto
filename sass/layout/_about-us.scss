@@ -1,0 +1,33 @@
+.about-us {
+    background-color: transparent;
+    padding: 8rem 0;
+    color: black;
+
+    height: 100vh;
+    width: 100%;
+
+    opacity: 0;
+    transition: all .4s;
+
+    @include respond(tab-port) {
+        padding-top: 4rem;
+    }
+    @include respond(phone) {
+        padding-top: 10rem;
+        padding-bottom: 0;
+    }
+}
+
+.about {
+    width: 70%;
+    margin-left: 3.2rem;
+    position: relative;
+    top: 10%;
+
+    @include respond(phone) {
+        top: 35%;
+    }
+
+}
+
+

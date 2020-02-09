@@ -1,0 +1,21 @@
+.language-nav {
+
+    
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    right: 2%;
+    top: 90%;
+    position: fixed;
+
+    &__link:active,
+    &__link:visited,
+    &__link:link{
+        text-decoration: none;
+    }
+    &__element {
+        text-transform: uppercase;
+        display: inline;
+        color: white;
+
+    }
+}

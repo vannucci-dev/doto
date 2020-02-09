@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+html{
+    font-size:62.5%; // 1rem = 10px; 10px/16px = 62.5%
+
+
+    @include respond(tab-land) {
+        font-size: 56.25%; //1rem = 9px; 9px/16px = 56.25%
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; //1rem = 8px; 8px/16px = 50%
+    }
+
+    @include respond(big-desk) {
+        font-size: 75%; //1rem = 12px; 12px/16px = 75%
+    }
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    transition: all 1.2s;
+    background-color: white;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.opacity {
+    opacity: 1 !important;
+}

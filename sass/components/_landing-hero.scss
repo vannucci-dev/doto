@@ -1,0 +1,12 @@
+.landing-hero {
+    position: absolute;
+    top:70%;
+
+    &__skill:active,
+    &__skill:link,
+    &__skill:visited {
+        text-decoration: none;
+        margin-right: 1.6rem;
+        color:grey;
+    }
+}

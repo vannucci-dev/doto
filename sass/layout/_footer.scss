@@ -1,0 +1,48 @@
+footer {
+    padding: 24rem 0 16rem 0;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    opacity: 0;
+    transition: all .5s;
+
+    
+
+}
+
+.footer-text:link,
+.footer-text:active,
+.footer-text:visited {
+    text-decoration: none;
+    color: grey;
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: 1.6rem;
+    left: 24rem;
+
+    @include respond(phone) {
+        left: 3rem;
+    }
+}
+
+#contact-1 {
+    transform: translateX(-8rem);
+    opacity: 0;
+    transition: all .5s;
+}
+#contact-2 {
+    transform: translatey(-8rem);
+    opacity: 0;
+    transition: all .5s;
+}
+#contact-3 {
+    transform: translateX(8rem);
+    opacity: 0;
+    transition: all .8s;
+}
+
+.contact-reset{
+    transform: translate(0, 0) !important;
+    opacity: 1 !important;
+}
+

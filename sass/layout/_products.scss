@@ -1,0 +1,13 @@
+.products {
+    background-color: transparent;
+    color: white;
+    padding: 24rem 0;
+    transition: all .9s;
+    transition: inherit;
+    
+    @include respond(phone) {
+        padding-top: 10rem;
+        padding-bottom: 40rem;
+    }
+}
+

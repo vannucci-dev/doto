@@ -1,0 +1,91 @@
+.products-grid {
+    width: 70%;
+    margin: 0 auto;
+    padding: 12rem 0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+
+    grid-template-areas: 
+    "product1 product1 product1 product1"
+    "product2 product2 product3 product3";
+
+    opacity: 0;
+    transition: all .9s;
+
+
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 25rem;
+    }
+
+    
+
+
+
+    &__1 {
+        grid-area: product1;
+    }
+    &__2 {
+        grid-area: product2;
+    }
+    &__3 {
+        grid-area: product3;
+        @include respond(phone) {
+            margin-top: 3rem !important;
+        }
+    }
+
+    &__element {
+        margin: 8rem auto;
+        overflow: hidden;
+
+        @include respond(phone) {
+            margin: 0 auto;
+        }
+    }
+
+    &__figure{
+        height: 56rem;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 4.8rem;
+        position: relative;
+
+        @include respond(phone) {
+            height: 40rem;
+        }
+    }
+
+    &__imageLarge,
+    &__image {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        transition: all .8s;
+        position: absolute;
+        bottom: 0;
+    }
+    
+
+    
+    &__element:hover &__caption:before {
+        width: 0;
+    }
+    
+    &__element:hover &__imageLarge, &__element:hover &__image {
+        transform:  scale(1.2);
+    }
+
+    &__element:hover &__caption {
+        transform: translateX(-1.6rem);
+    }
+
+    &__element:hover &__title {
+        transform: translateX(0);
+    }
+}
+

@@ -1,0 +1,68 @@
+.button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-black-to-white:visited,
+    &-black-to-white:link,
+    &-black-to-white:active{
+
+
+        width: 10rem;
+        height: 2.4rem;
+        font-size: 2rem;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        padding: 3.2rem 4rem;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+        background-size: 225%;
+        transition: all .4s;
+
+    }
+
+    &-black-to-white:hover {
+        
+        background-position: 100%;
+        color: black;
+        transform: translateX(1.6rem);
+    }
+}
+
+.btn {
+    &__callToAction{
+        margin-left: 24rem;
+    }
+    
+    &__callToAction:before {
+        
+            display: inline-block;
+            content: "";
+            border-top: .4rem solid grey;
+            width: 6.4rem;
+            margin-right: 1.6rem;
+            transition: all .4s;
+            
+    
+    }
+
+    
+}
+
+.about:hover .btn__callToAction:before,
+.contact-us__title:hover .btn__callToAction:before{
+    width: 0;
+}
+
+.central-btn {
+    position: relative;
+    top: 10rem;
+    opacity: 0;
+    animation-delay: 2s;
+    transition: all .5s;
+}
+

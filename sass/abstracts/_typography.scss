@@ -1,0 +1,90 @@
+
+.central-title {
+    margin: 12.8rem auto;
+    width: 100%;
+    text-align: center;
+
+    &__title {
+        font-size: 6.4rem;
+
+        @include respond(phone) {
+            font-size: 3.2rem;
+            width: 60%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
+.landing-hero {
+    &__title{
+        font-size: 6.4rem;
+        margin-left: 24rem;
+
+        @include respond(tab-land) {
+            margin-left: 12rem;
+        }
+        @include respond(phone) {
+            margin-left: 4rem;
+            font-size: 4rem;
+        }
+    }
+
+    &__description {
+        text-transform: uppercase;
+        margin-left: 24rem;
+
+        @include respond(tab-land) {
+            margin-left: 12rem;
+        }
+        @include respond(phone) {
+            margin-left: 4rem;
+        }
+    } 
+}
+
+.products-grid {
+    
+    &__caption {
+
+        text-transform: uppercase;
+        color: grey;
+        margin: 1.6rem 0;
+        transform: translateX(3.2rem);
+        transition: all .4s;
+
+    }
+
+    &__title {
+
+        font-size: 4.8rem;
+        width: 70%;
+        transform: translateX(3.2rem);
+        transition: all .4s;
+
+        @include respond(tab-land) {
+            width: 85%;
+        }
+        @include respond(tab-port) {
+            width: 100%;
+        }
+        @include respond(phone) {
+            font-size: 2rem;
+            transform: translateX(0);
+        }
+    }
+
+    
+
+    &__caption:before {
+        display: inline-block;
+        content: "";
+        border-top: .48rem solid grey;
+        width: 6.4rem;
+        margin-right: 1.6rem;
+        transition: all .4s;
+        
+    }
+}
