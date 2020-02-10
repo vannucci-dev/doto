@@ -24,10 +24,6 @@
     position: relative;
     top: 10%;
 
-    @include respond(phone) {
-        top: 35%;
-    }
-
 }
 
 

@@ -7,11 +7,6 @@
     transform: translateX(130rem);
     transition: all 1.5s;
 
-    @include respond(phone) {
-        position: relative;
-        top: 30rem;
-    }
-
     opacity: 0;
 
     &__container {
@@ -37,6 +32,6 @@
     opacity: 1;
 
     @include respond(phone) {
-        transform: translateX(28%);
+        transform: translateX(0);
     }
 }

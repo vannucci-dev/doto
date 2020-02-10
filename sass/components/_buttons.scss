@@ -36,6 +36,10 @@
 .btn {
     &__callToAction{
         margin-left: 24rem;
+
+        @include respond(phone) {
+            margin-left: -2rem;
+        }
     }
     
     &__callToAction:before {

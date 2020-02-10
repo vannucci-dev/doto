@@ -6,9 +6,5 @@
     transition: inherit;
 
 
-    @include respond(tab-port) {
-        padding-top: 10rem;
-        padding-bottom: 35rem;
-    }
     
 }
