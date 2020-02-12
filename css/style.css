@@ -490,7 +490,7 @@ footer {
   height: 4.8rem;
   z-index: 4000; }
   .site-header__logo--white {
-    color: white; }
+    fill: white; }
   .site-header__logo--black {
     fill: black; }
 
